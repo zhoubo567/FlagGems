@@ -464,6 +464,5 @@ def test_leaky_relu_backward_perf():
         op_name="LeakyReluBackwardBenchmark",
         torch_op=torch.ops.aten.leaky_relu_backward,
         dtypes=FLOAT_DTYPES,
-        is_backward=True,
     )
     bench.run()
